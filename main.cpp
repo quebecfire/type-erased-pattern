@@ -4,10 +4,10 @@
 
 #include "Shape.h"
 
-#define USE_LIB_1 false
+#define USE_LIB_1 true
 
 #if USE_LIB_1
-    #include "draw1.h"
+    #include "drawing-strategy/draw1.h"
 #else
     #include "drawing-strategy/draw2.h"
 #endif
