@@ -5,15 +5,14 @@
 #ifndef TYPE_ERASED_SQUARE_H
 #define TYPE_ERASED_SQUARE_H
 
-class Square
-{
-public:
-    explicit Square(double s) : side{s}{}
+class Square {
+ public:
+  explicit Square(double s) : side{s} {}
 
-    [[nodiscard]] double getSide() const noexcept { return side;}
+  [[nodiscard]] double getSide() const noexcept { return side; }
 
-private:
-    double side;
+ private:
+  double side;
 };
 
-#endif //TYPE_ERASED_SQUARE_H
+#endif  // TYPE_ERASED_SQUARE_H

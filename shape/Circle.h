@@ -5,15 +5,14 @@
 #ifndef TYPE_ERASED_CIRCLE_H
 #define TYPE_ERASED_CIRCLE_H
 
-class Circle
-{
-public:
-    explicit Circle(double rad) : radius{rad}{}
+class Circle {
+ public:
+  explicit Circle(double rad) : radius{rad} {}
 
-    [[nodiscard]] double getRadius() const noexcept { return radius;}
+  [[nodiscard]] double getRadius() const noexcept { return radius; }
 
-private:
-    double radius;
+ private:
+  double radius;
 };
 
-#endif //TYPE_ERASED_CIRCLE_H
+#endif  // TYPE_ERASED_CIRCLE_H
